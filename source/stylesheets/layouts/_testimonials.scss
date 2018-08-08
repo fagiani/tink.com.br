@@ -1,0 +1,31 @@
+.testimonial {
+  background-color: $purple;
+  background-image: url('/images/bg-footer.jpg');
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+
+  .testimonial-text {
+    color: $purple-light;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .testimonial-author-name {
+    color: $purple-light;
+    margin-top: 20px;
+    font-size: 1rem;
+    display: block;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .testimonial {
+    .testimonial-text {
+      font-size: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.content-body {
+  p,
+  ol li,
+  ul li {
+    font-size: 1.125rem;
+    color: $gray-500;
+    line-height: 1.8;
+
+    a {
+      color: $secondary;
+      // border-bottom: 2px solid $primary;
+      // text-decoration: none;
+      // font-weight: bold;
+    }
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  ol,
+  ul {
+    padding-left: 15px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 20px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.2;
+  }
+
+  h4,
+  h5,
+  h6 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  h6 {
+    font-size: 1.125rem;
+  }
+
+  img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  hr {
+    border-top: 2px solid $gray-200;
+  }
+}

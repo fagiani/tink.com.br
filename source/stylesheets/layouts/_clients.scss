@@ -1,0 +1,14 @@
+.clients-brands {
+  background-color: $purple;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  .client-brand {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .client-brand.client-brand-gray {
+    background-color: $gray-400;
+  }
+}

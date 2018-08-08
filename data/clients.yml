@@ -1,0 +1,39 @@
+- name: ESPN
+  slug: espn
+  logo_url: clients/espn-logo.png
+  logo_negative_url: clients/espn-logo-negative.png
+
+- name: Disney
+  slug: disney
+  logo_url: clients/disney-logo.png
+  logo_negative_url: clients/disney-logo-negative.png
+
+- name: ALE Combustíveis
+  slug: ale
+  logo_url: clients/ale-logo.png
+  logo_negative_url: clients/ale-logo-negative.png
+
+- name: SBT / RecordTV / Band
+  slug: sbt-recordtv-band
+  logo_url: clients/sbt-recordtv-band-logo.png
+  logo_negative_url: clients/sbt-recordtv-band-logo-negative.png
+
+- name: Empiricus
+  slug: empiricus
+  logo_url: clients/empiricus-logo.png
+  logo_negative_url: clients/empiricus-logo-negative.png
+
+- name: HYPER
+  slug: hyper
+  logo_url: clients/hyper-logo.png
+  logo_negative_url: clients/hyper-logo-negative.png
+
+- name: O Antagonista
+  slug: o-antagonista
+  logo_url: clients/o-antagonista-logo.png
+  logo_negative_url: clients/o-antagonista-logo-negative.png
+
+- name: Guichê Web
+  slug: guiche-web
+  logo_url: clients/guiche-web-logo.png
+  logo_negative_url: clients/guiche-web-logo-negative.png

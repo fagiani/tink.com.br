@@ -1,0 +1,125 @@
+<div class="hero">
+  <div class="container">
+    <h1 class="hero-title">
+      <%= t(:hero_title, default: "Beyond the clouds") %>
+    </h1>
+    <p class="hero-subtitle">
+      <%= t(:hero_subtitle, default: "Criando Uma Infraestrutura Escalável & Dinâmica") %>
+    </p>
+    <a href="#" class="hero-cta-btn btn btn-primary">
+      <%= t(:hero_cta_text, default: "Conheça nossa equipe") %>
+    </a>
+  </div>
+</div>
+<div class="clients-brands">
+  <div class="container">
+    <div class="row">
+      <% data.clients.each do |client| %>
+        <div class="col-6 col-md-3 client-brand">
+          <%= image_tag client.logo_negative_url, :alt => client.name, :class => "#{ client.slug } img-fluid" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<% if data.services.size >= 3 %>
+  <div class="section section-who-we-are" id="quem-somos">
+    <div class="container">
+      <header class="section-header">
+        <h2 class="section-title">
+          <%= t(:section_who_we_are_title, default: "Quem somos") %>
+        </h2>
+        <p class="section-subtitle">
+          <%= t(:section_who_we_are_subtitle, default: "A <b>Tink</b> consegue <b>reduzir os custos com hospedagem, tráfego e armazenamento de forma significativa</b> para estes tipos de serviços. Principalmente se a sua plataforma tiver muitos acessos, a economia pode chegar a 80% dos custos atuais.") %>
+        </p>
+      </header>
+      <div class="main-services-listing">
+        <div class="row">
+          <% data.services[0..2].each do |service| %>
+            <div class="col-md-4 mb-4">
+              <div class="service-card <%= service.slug %>">
+                <div class="service-icon" style="background-image: url('images/<%= service.icon_url %>');"></div>
+                <h4 class="service-title">
+                  <%= service.title.send(I18n.locale.to_sym) %>
+                </h4>
+                <p class="service-description">
+                  <%= service.description.send(I18n.locale.to_sym) %>
+                </p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+<div class="testimonial">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="testimonial-text">
+          "Ter um servidor hospedado em um datacenter não significa necessariamente estar na nuvem. A nuvem é um ambiente escalável e dinâmico que permite liberdade e rapidez na tomada de decisão além de grande economia quando utilizada de forma otimizada."
+        </div>
+        <span class="testimonial-author-name">
+          ​Gustavo Ribeiro, CEO
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<% if data.differentials %>
+  <div class="section section-differentials">
+    <div class="container">
+      <div class="section-body">
+        <% data.differentials.each do |differential| %>
+          <div class="differential <%= differential.slug %>">
+            <div class="row">
+              <div class="col-md-5 differential--start">
+                <h3 class="differential-title">
+                  <%= differential.title.send(I18n.locale.to_sym) %>
+                </h3>
+                <div class="differential-description">
+                  <%= differential.description.send(I18n.locale.to_sym) %>
+                </div>
+              </div>
+              <div class="col-md-7 differential--end">
+                <img src="<%= differential.image_url %>" class="differential-image img-fluid w-100">
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+<div class="testimonial">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="testimonial-text">
+          "Ter um servidor hospedado em um datacenter não significa necessariamente estar na nuvem. A nuvem é um ambiente escalável e dinâmico que permite liberdade e rapidez na tomada de decisão além de grande economia quando utilizada de forma otimizada."
+        </div>
+        <span class="testimonial-author-name">
+          ​Gustavo Ribeiro, CEO
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section section-monitoring-and-support" id="monitoramento-e-suporte">
+  <div class="container">
+    <header class="section-header">
+      <h2 class="section-title">
+        <%= t(:section_monitoring_and_support_title, default: "Monitoramento & Suporte") %>
+      </h2>
+      <p class="section-subtitle">
+        <%= t(:section_monitoring_and_support_subtitle, default: "A <b>Tink</b> consegue <b>reduzir os custos com hospedagem, tráfego e armazenamento de forma significativa</b> para estes tipos de serviços. Principalmente se a sua plataforma tiver muitos acessos, a economia pode chegar a 80% dos custos atuais.") %>
+      </p>
+    </header>
+    <div class="prices-and-plans">
+      <div class="row">
+      </div>
+    </div>
+  </div>
+</div>

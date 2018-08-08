@@ -1,0 +1,26 @@
+<%= partial(:page_header, :locals => { :title => t(:clients_page_title, default: "Clientes") }) %>
+
+<% if data.clients %>
+  <div class="section section-clients" id="servicos">
+    <div class="container">
+      <header class="section-header">
+        <h2 class="section-title">
+          <%= t(:section_clients_title, default: "Quem trabalha conosco e nos apoia") %>
+        </h2>
+        <p class="section-subtitle">
+          <%= t(:section_clients_subtitle, default: "Quisque eu dui nec felis bibendum venen aliquam suscipit odio justo, id vulputate ​tortor pharetra ac tibulum ut quam pharetra, ultrices neque in, viverra tortor. In facilisis dui sem, non mollis.") %>
+        </p>
+      </header>
+
+      <div class="main-clients-listing">
+        <div class="row">
+          <% data.clients.each do |client| %>
+            <div class="col-6 col-md-4 mb-4 client-brand client-brand-gray">
+              <%= image_tag client.logo_url, :alt => client.name, :class => "#{ client.slug } img-fluid" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

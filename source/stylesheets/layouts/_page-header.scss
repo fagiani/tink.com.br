@@ -1,0 +1,39 @@
+.page-header {
+  min-height: 340px;
+  background-image: url('/images/bg-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+
+  .page-header-title,
+  .page-header-subtitle {
+    color: $white;
+  }
+
+  .page-header-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 0 0 6px rgba($purple, 0.25);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .page-header {
+    .page-header-title {
+      font-size: 5rem;
+    }
+
+    .page-header-subtitle {
+      font-size: 1.5rem;
+    }
+
+    .page-header-cta-btn {
+      margin-top: 10px;
+    }
+  }
+}

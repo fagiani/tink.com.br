@@ -1,0 +1,28 @@
+.service-card {
+  background-color: $white;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .service-icon {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .service-title {
+    margin-top: 10px;
+    color: $orange;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .service-description {
+    padding-top: 20px;
+  }
+}

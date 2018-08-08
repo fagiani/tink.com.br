@@ -1,0 +1,99 @@
+.section {
+  background-color: #eaeaeb;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+    .section-title {
+      text-transform: uppercase;
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .section {
+    .section-header {
+      .section-title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+.section.section-clients {
+  background-color: $white;
+}
+
+.section.section-differentials {
+  background-color: $white;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+
+  .differential {
+    text-align: center;
+
+    .differential--start,
+    .differential--end {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .differential-title {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: $purple;
+    }
+
+    .differential-description {
+      line-height: 1.6;
+      margin-top: 20px;
+      font-size: 1.125rem;
+    }
+  }
+
+  .differential + .differential {
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: 1px solid $gray-400;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .section.section-differentials {
+    .differential {
+      .differential-title {
+        font-size: 3.5rem;
+      }
+
+      &:nth-child(even) {
+        .differential--start {
+          order: 2;
+        }
+
+        .differential--end {
+          order: 1;
+        }
+
+        .differential-description {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

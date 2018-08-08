@@ -1,0 +1,34 @@
+<%= partial(:page_header, :locals => { :title => t(:solutions_page_title, default: "Soluções") }) %>
+
+<% if data.services %>
+  <div class="section section-services" id="servicos">
+    <div class="container">
+      <header class="section-header">
+        <h2 class="section-title">
+          <%= t(:section_services_title, default: "Além das nuvens") %>
+        </h2>
+        <p class="section-subtitle">
+          <%= t(:section_services_subtitle, default: "Quisque eu dui nec felis bibendum venen aliquam suscipit odio justo, id vulputate ​tortor pharetra ac tibulum ut quam pharetra, ultrices neque in, viverra tortor. In facilisis dui sem, non mollis.") %>
+        </p>
+      </header>
+
+      <div class="main-services-listing">
+        <div class="row">
+          <% data.services.each do |service| %>
+            <div class="col-md-4 mb-4">
+              <div class="service-card <%= service.slug %>">
+                <div class="service-icon" style="background-image: url('images/<%= service.icon_url %>');"></div>
+                <h4 class="service-title">
+                  <%= service.title.send(I18n.locale.to_sym) %>
+                </h4>
+                <p class="service-description">
+                  <%= service.description.send(I18n.locale.to_sym) %>
+                </p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
