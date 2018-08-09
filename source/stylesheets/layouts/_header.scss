@@ -21,14 +21,10 @@
     .navbar-toggler {
       @extend .btn, .btn-secondary, .text-uppercase;
 
-      background-color: $secondary !important;
-      border-color: $secondary !important;
+      background-color: $purple !important;
+      border-color: $purple !important;
       box-shadow: none !important;
       position: relative;
-
-      &::before {
-        background-color: $secondary;
-      }
 
       &::after {
         background-color: $primary;
@@ -43,6 +39,7 @@
       text-align: center;
 
       & > .nav-link {
+        transition: border-color .3s;
         text-transform: uppercase;
         font-size: 0.75rem;
         position: relative;

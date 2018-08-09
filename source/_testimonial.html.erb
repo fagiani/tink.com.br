@@ -1,0 +1,14 @@
+<div class="testimonial">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="testimonial-text">
+          <%= testimonial.text.send(I18n.locale.to_sym) %>
+        </div>
+        <span class="testimonial-author-name">
+          <%= testimonial.author_name %>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

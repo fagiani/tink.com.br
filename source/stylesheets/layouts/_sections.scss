@@ -81,9 +81,14 @@
         font-size: 3.5rem;
       }
 
+      .differential--start {
+        text-align: right;
+      }
+
       &:nth-child(even) {
         .differential--start {
           order: 2;
+          text-align: left;
         }
 
         .differential--end {

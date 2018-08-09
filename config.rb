@@ -12,7 +12,6 @@ activate :directory_indexes
 activate :livereload
 
 # After configuration loaders
-
 after_configuration do
   sprockets.append_path "node_modules"
 end
@@ -52,21 +51,22 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :asset_hash
-#   activate :minify_css
-#   activate :minify_html, remove_input_attributes: false
-#   activate :minify_javascript
-#   activate :gzip
+configure :build do
+  sprockets.append_path "node_modules"
 
-#   activate :robots, rules:    [{ user_agent: '*', allow: %w(/) }],
-#                     sitemap:  "#{@app.data.site.url}/sitemap.xml"
+  activate :asset_hash
+  activate :minify_css
+  activate :minify_html, remove_input_attributes: false
+  activate :minify_javascript
+  activate :gzip
 
-#   activate :sitemap, hostname: @app.data.site.url
+  activate :robots, rules:    [{ user_agent: '*', allow: %w(/) }], sitemap:  "#{@app.data.site.url}/sitemap.xml"
 
-#   set :relative_links, true
-#   activate :relative_assets
-# end
+  activate :sitemap, hostname: @app.data.site.url
+
+  set :relative_links, true
+  activate :relative_assets
+end
 
 # activate :deploy do |deploy|
 #   deploy.deploy_method  = :git

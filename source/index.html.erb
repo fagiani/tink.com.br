@@ -53,20 +53,7 @@
     </div>
   </div>
 <% end %>
-<div class="testimonial">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="testimonial-text">
-          "Ter um servidor hospedado em um datacenter não significa necessariamente estar na nuvem. A nuvem é um ambiente escalável e dinâmico que permite liberdade e rapidez na tomada de decisão além de grande economia quando utilizada de forma otimizada."
-        </div>
-        <span class="testimonial-author-name">
-          ​Gustavo Ribeiro, CEO
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "testimonial", :locals => { :testimonial => data.testimonials[0] } if data.testimonials[0] %>
 <% if data.differentials %>
   <div class="section section-differentials">
     <div class="container">
@@ -93,20 +80,7 @@
   </div>
 </div>
 <% end %>
-<div class="testimonial">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="testimonial-text">
-          "Ter um servidor hospedado em um datacenter não significa necessariamente estar na nuvem. A nuvem é um ambiente escalável e dinâmico que permite liberdade e rapidez na tomada de decisão além de grande economia quando utilizada de forma otimizada."
-        </div>
-        <span class="testimonial-author-name">
-          ​Gustavo Ribeiro, CEO
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "testimonial", :locals => { :testimonial => data.testimonials[1] } if data.testimonials[1] %>
 <div class="section section-monitoring-and-support" id="monitoramento-e-suporte">
   <div class="container">
     <header class="section-header">
