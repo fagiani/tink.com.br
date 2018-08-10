@@ -1,5 +1,5 @@
 - slug: good-for-you
-  image_url: http://via.placeholder.com/350x180
+  image_url: https://via.placeholder.com/350x180
   title:
     pt: Bom pra você
     en: Bom pra você
@@ -10,7 +10,7 @@
     es: Fazemos monitoramento 24/7 atuando em problemas específicos nos componentes da sua estrutura. Suportamos o funcionamento de módulos estratégicos do seu negócio como APIs, sites, portais de conteúdo, dentre outros.
 
 - slug: good-for-your-business
-  image_url: http://via.placeholder.com/350x180
+  image_url: https://via.placeholder.com/350x180
   title:
     pt: Bom pra sua empresa
     en: Bom pra sua empresa
