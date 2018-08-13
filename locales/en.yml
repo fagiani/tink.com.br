@@ -1,2 +1,11 @@
 en:
   hello: "Hello"
+  hero_cta_text: "Meet our team"
+  home: "Home"
+  solutions: "Solutions"
+  clients: "Clients"
+  contact: "Contact"
+  paths:
+    solutions: "solutions"
+    clients: "clients"
+    contact: "contact"

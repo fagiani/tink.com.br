@@ -14,16 +14,16 @@
       <div class="collapse navbar-collapse" id="topbar-primary-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item <%= "active" if nav_active("index.html") %>">
-            <%= link_to t(:home, default: "Home"), '/', :class => 'nav-link' %>
+            <%= link_to t(:home, default: "Home"), locale_path('/'), :class => 'nav-link' %>
           </li>
           <li class="nav-item <%= "active" if nav_active("solutions.html") %>">
-            <%= link_to t(:solutions, default: "Soluções"), '/solutions', :class => 'nav-link' %>
+            <%= link_to t(:solutions, default: "Soluções"), locale_path('solutions'), :class => 'nav-link' %>
           </li>
           <li class="nav-item <%= "active" if nav_active("clients.html") %>">
-            <%= link_to t(:clients, default: "Clientes"), '/clients', :class => 'nav-link' %>
+            <%= link_to t(:clients, default: "Clientes"), locale_path('clients'), :class => 'nav-link' %>
           </li>
           <li class="nav-item <%= "active" if nav_active("contact.html") %>">
-            <%= link_to t(:contact, default: "Contato"), '/contact', :class => 'nav-link' %>
+            <%= link_to t(:contact, default: "Contato"), locale_path('contact'), :class => 'nav-link' %>
           </li>
         </ul>
       </div>
