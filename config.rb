@@ -46,6 +46,13 @@ helpers do
   def nav_active(path)
     current_page.path == "#{I18n.locale}/" + path || current_page.path == path
   end
+
+  def locale_path(path, options={})
+    lang = options[:language] ? options[:language] : I18n.locale.to_s
+    lang = '' if lang == 'pt'
+    path = t("paths.#{path}") unless path == '/'
+    "/#{lang}/#{path}".gsub(/\/+/,'/')
+  end
 end
 
 # Build-specific configuration

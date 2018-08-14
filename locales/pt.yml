@@ -1,2 +1,10 @@
 pt:
   hello: "Hola"
+  home: "Início"
+  solutions: "Soluções"
+  clients: "Clientes"
+  contact: "Contato"
+  paths:
+    solutions: "solucoes"
+    clients: "clientes"
+    contact: "contato"
