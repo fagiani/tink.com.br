@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: feature/netlify-cms
+media_folder: "source/images"
+public_folder: "/images"
+collections:
+  - label: "Cadastros"
+    name: "cadastros"
+    files:
+      - label: "Clientes"
+        name: "clientes"
+        file: "data/clients.yml"
+        fields:
+          - label: "Cliente"
+            name: "client"
+            widget: "list"
+            fields:
+              - {label: "Nome", name: "name", widget: "string"}
+              - {label: "Slug", name: "slug", widget: "string"}
+              - {label: "Logo", name: "logo_url", widget: "image"}
+              - {label: "Logo Negativa", name: "logo_negative_url", widget: "image"}
