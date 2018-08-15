@@ -14,7 +14,7 @@
 <div class="clients-brands">
   <div class="container">
     <div class="row">
-      <% data.clients.each do |client| %>
+      <% data.clients.records.each do |client| %>
         <div class="col-6 col-md-3 client-brand">
           <%= image_tag client.logo_negative_url, :alt => client.name, :class => "#{ client.slug } img-fluid" %>
         </div>

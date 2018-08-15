@@ -1,6 +1,6 @@
 <%= partial(:page_header, :locals => { :title => t(:clients, default: "Clientes") }) %>
 
-<% if data.clients %>
+<% if data.clients.records %>
   <div class="section section-clients" id="servicos">
     <div class="container">
       <header class="section-header">
@@ -14,7 +14,7 @@
 
       <div class="main-clients-listing">
         <div class="row">
-          <% data.clients.each do |client| %>
+          <% data.clients.records.each do |client| %>
             <div class="col-6 col-md-4 mb-4 client-brand client-brand-gray">
               <%= image_tag client.logo_url, :alt => client.name, :class => "#{ client.slug } img-fluid" %>
             </div>

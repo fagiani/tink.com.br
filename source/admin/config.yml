@@ -12,7 +12,7 @@ collections:
         file: "data/clients.yml"
         fields:
           - label: "Cliente"
-            name: "client"
+            name: "records"
             widget: "list"
             fields:
               - {label: "Nome", name: "name", widget: "string"}
