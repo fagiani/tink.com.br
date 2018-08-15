@@ -6,6 +6,8 @@ public_folder: "/images"
 collections:
   - label: "Cadastros"
     name: "cadastros"
+    editor:
+      preview: false
     files:
       - label: "Clientes"
         name: "clientes"
