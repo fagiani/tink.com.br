@@ -67,3 +67,20 @@ collections:
                   - {label: "Inglês", name: "en", widget: "text"}
                   - {label: "Espanhol", name: "es", widget: "text"}
               - {label: "Ícone", name: "icon_url", widget: "image"}
+      - label: "Testemunhos"
+        name: "testimonials"
+        file: "data/testimonials.yml"
+        fields:
+          - label: "Registros"
+            name: "records"
+            widget: "list"
+            fields:
+              - {label: "Slug", name: "slug", widget: "string"}
+              - {label: "Autor", name: "author_name", widget: "string"}
+              - label: "Texto"
+                name: "text"
+                widget: "object"
+                fields:
+                  - {label: "Português", name: "pt", widget: "text"}
+                  - {label: "Inglês", name: "en", widget: "text"}
+                  - {label: "Espanhol", name: "es", widget: "text"}
