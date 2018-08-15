@@ -1,43 +1,44 @@
-- icon_url: services-icons/server.png
-  slug: capacity-and-scalability
-  title:
-    pt: Capacidade e escalabilidade
-    en: Capacidade e escalabilidade
-    es: Capacidade e escalabilidade
-  description:
-    pt: Possibilitando à sua aplicação o crescimento de acordo com a demanda.
-    en: Possibilitando à sua aplicação o crescimento de acordo com a demanda.
-    es: Possibilitando à sua aplicação o crescimento de acordo com a demanda.
+records:
+  - icon_url: services-icons/server.png
+    slug: capacity-and-scalability
+    title:
+      pt: Capacidade e escalabilidade
+      en: Capacidade e escalabilidade
+      es: Capacidade e escalabilidade
+    description:
+      pt: Possibilitando à sua aplicação o crescimento de acordo com a demanda.
+      en: Possibilitando à sua aplicação o crescimento de acordo com a demanda.
+      es: Possibilitando à sua aplicação o crescimento de acordo com a demanda.
 
-- icon_url: services-icons/edit.png
-  slug: optimize-use-of-resources
-  title:
-    pt: Otimizar o uso dos recursos
-    en: Otimizar o uso dos recursos
-    es: Otimizar o uso dos recursos
-  description:
-    pt: Distribuindo em serviços adequados cada parte da infraestrutura e/ou software.
-    en: Distribuindo em serviços adequados cada parte da infraestrutura e/ou software.
-    es: Distribuindo em serviços adequados cada parte da infraestrutura e/ou software.
+  - icon_url: services-icons/edit.png
+    slug: optimize-use-of-resources
+    title:
+      pt: Otimizar o uso dos recursos
+      en: Otimizar o uso dos recursos
+      es: Otimizar o uso dos recursos
+    description:
+      pt: Distribuindo em serviços adequados cada parte da infraestrutura e/ou software.
+      en: Distribuindo em serviços adequados cada parte da infraestrutura e/ou software.
+      es: Distribuindo em serviços adequados cada parte da infraestrutura e/ou software.
 
-- icon_url: services-icons/rocket.png
-  slug: high-availability
-  title:
-    pt: Ter alta disponibilidade
-    en: Ter alta disponibilidade
-    es: Ter alta disponibilidade
-  description:
-    pt: Conseguimos isto, por meio de uma infraestrutura tolerante, fixa e sem nenhuma falha.
-    en: Conseguimos isto, por meio de uma infraestrutura tolerante, fixa e sem nenhuma falha.
-    es: Conseguimos isto, por meio de uma infraestrutura tolerante, fixa e sem nenhuma falha.
+  - icon_url: services-icons/rocket.png
+    slug: high-availability
+    title:
+      pt: Ter alta disponibilidade
+      en: Ter alta disponibilidade
+      es: Ter alta disponibilidade
+    description:
+      pt: Conseguimos isto, por meio de uma infraestrutura tolerante, fixa e sem nenhuma falha.
+      en: Conseguimos isto, por meio de uma infraestrutura tolerante, fixa e sem nenhuma falha.
+      es: Conseguimos isto, por meio de uma infraestrutura tolerante, fixa e sem nenhuma falha.
 
-- icon_url: services-icons/users.png
-  slug: technical-support
-  title:
-    pt: Suporte técnico
-    en: Suporte técnico
-    es: Suporte técnico
-  description:
-    pt: Quisque eu dui nec felis bibendum venen Aliquam suscipit odio justo, id vulputate ​tortor pharetra ac.
-    en: Quisque eu dui nec felis bibendum venen Aliquam suscipit odio justo, id vulputate ​tortor pharetra ac.
-    es: Quisque eu dui nec felis bibendum venen Aliquam suscipit odio justo, id vulputate ​tortor pharetra ac.
+  - icon_url: services-icons/users.png
+    slug: technical-support
+    title:
+      pt: Suporte técnico
+      en: Suporte técnico
+      es: Suporte técnico
+    description:
+      pt: Quisque eu dui nec felis bibendum venen Aliquam suscipit odio justo, id vulputate ​tortor pharetra ac.
+      en: Quisque eu dui nec felis bibendum venen Aliquam suscipit odio justo, id vulputate ​tortor pharetra ac.
+      es: Quisque eu dui nec felis bibendum venen Aliquam suscipit odio justo, id vulputate ​tortor pharetra ac.

@@ -1,6 +1,6 @@
 <%= partial(:page_header, :locals => { :title => t(:solutions, default: "Soluções") }) %>
 
-<% if data.services %>
+<% if data.services.records %>
   <div class="section section-services" id="servicos">
     <div class="container">
       <header class="section-header">
@@ -14,7 +14,7 @@
 
       <div class="main-services-listing">
         <div class="row">
-          <% data.services.each do |service| %>
+          <% data.services.records.each do |service| %>
             <div class="col-md-4 mb-4">
               <div class="service-card <%= service.slug %>">
                 <div class="service-icon" style="background-image: url('images/<%= service.icon_url %>');"></div>

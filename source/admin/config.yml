@@ -43,3 +43,27 @@ collections:
                   - {label: "Inglês", name: "en", widget: "text"}
                   - {label: "Espanhol", name: "es", widget: "text"}
               - {label: "Imagem", name: "image_url", widget: "image"}
+      - label: "Serviços"
+        name: "services"
+        file: "data/services.yml"
+        fields:
+          - label: "Registros"
+            name: "records"
+            widget: "list"
+            fields:
+              - {label: "Slug", name: "slug", widget: "string"}
+              - label: "Título"
+                name: "title"
+                widget: "object"
+                fields:
+                  - {label: "Português", name: "pt", widget: "string"}
+                  - {label: "Inglês", name: "en", widget: "string"}
+                  - {label: "Espanhol", name: "es", widget: "string"}
+              - label: "Descrição"
+                name: "description"
+                widget: "object"
+                fields:
+                  - {label: "Português", name: "pt", widget: "text"}
+                  - {label: "Inglês", name: "en", widget: "text"}
+                  - {label: "Espanhol", name: "es", widget: "text"}
+              - {label: "Ícone", name: "icon_url", widget: "image"}
