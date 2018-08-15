@@ -54,11 +54,11 @@
   </div>
 <% end %>
 <%= partial "testimonial", :locals => { :testimonial => data.testimonials[0] } if data.testimonials[0] %>
-<% if data.differentials %>
+<% if data.differentials.records %>
   <div class="section section-differentials">
     <div class="container">
       <div class="section-body">
-        <% data.differentials.each do |differential| %>
+        <% data.differentials.records.each do |differential| %>
           <div class="differential <%= differential.slug %>">
             <div class="row">
               <div class="col-md-5 differential--start">
