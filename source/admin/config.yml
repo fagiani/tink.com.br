@@ -11,7 +11,7 @@ collections:
         name: "clientes"
         file: "data/clients.yml"
         fields:
-          - label: "Cliente"
+          - label: "Registros"
             name: "records"
             widget: "list"
             fields:
